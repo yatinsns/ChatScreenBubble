@@ -105,8 +105,9 @@
     }
 }
 
-- (void)setLabels
+- (void)refreshLabels
 {
+    [self clearLabels];    
     for(NSString *text in texts_)
     {
         OHAttributedLabel *label = [[OHAttributedLabel alloc] initWithFrame:CGRectZero];
@@ -125,8 +126,8 @@
         [self addSubview:label];
         [label release];
     }
-
 }
+
 - (void)setPaddingTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right inter:(CGFloat)inter
 {
     paddingTop_ = top;
@@ -165,10 +166,7 @@
 
 - (void)refreshViewWithCurrentContext
 {
-    [self clearLabels];
-    NSLog(@"%d",labels_.count);
-    [self setLabels];
-    NSLog(@"%d",labels_.count);    
+    [self refreshLabels];   
     CGSize sizeToFit = [[self class] sizeForTexts:texts_ withFont:font_ constrainedToSize:CGSizeMake(self.frame.size.width, CGFLOAT_MAX) paddingTop:paddingTop_ left:paddingLeft_ bottom:paddingBottom_ right:paddingRight_ inter:paddingInter_];
     self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, sizeToFit.width, sizeToFit.height);
 }

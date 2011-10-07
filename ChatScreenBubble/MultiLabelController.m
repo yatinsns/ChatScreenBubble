@@ -20,7 +20,7 @@
 #define PADDING_INTER 12.0
 
 #define LEFTCAPWIDTH 32
-#define TOPCAPHEIGHT 52
+#define TOPCAPHEIGHT 22
 
 
 @implementation MultiLabelController
@@ -65,8 +65,8 @@
                     @"blah agghh zzzzzh fdsfsdf fds 9650770584 fdsfds hfds ffdsfa hafd sfsd",
                     nil];
     
-  UIFont *font = [UIFont systemFontOfSize:14.0];
-  bubbleMultiLabel_ = [[BubbleMultiLabel alloc] initWithImageName:@"bubbleblue-retina.png" leftCapWidth:LEFTCAPWIDTH topCapHeight:TOPCAPHEIGHT];
+  UIFont *font = [UIFont systemFontOfSize:16.0];
+  bubbleMultiLabel_ = [[BubbleMultiLabel alloc] initWithImageName:@"bubbleblue.png" leftCapWidth:LEFTCAPWIDTH topCapHeight:TOPCAPHEIGHT];
   bubbleMultiLabel_.font = font;
   bubbleMultiLabel_.texts = texts;
   bubbleMultiLabel_.clipsToBounds = YES;

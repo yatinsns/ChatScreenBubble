@@ -18,9 +18,23 @@
 		05EB4259143EC6D6009BE9C9 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB4256143EC6D6009BE9C9 /* NSAttributedString+Attributes.m */; };
 		05EB425A143EC6D6009BE9C9 /* OHAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB4258143EC6D6009BE9C9 /* OHAttributedLabel.m */; };
 		05EB425E143ECE8A009BE9C9 /* MultiLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB425D143ECE8A009BE9C9 /* MultiLabelController.m */; };
-		05EB4260143ECF9C009BE9C9 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB425F143ECF9C009BE9C9 /* bubble.png */; };
 		05EB4262143ED0DB009BE9C9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB4261143ED0DB009BE9C9 /* CoreText.framework */; };
-		05EB4264143EF62A009BE9C9 /* bubbleblue-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4263143EF62A009BE9C9 /* bubbleblue-retina.png */; };
+		05EB427C143EF941009BE9C9 /* bottombar.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4267143EF941009BE9C9 /* bottombar.png */; };
+		05EB427D143EF941009BE9C9 /* delivered.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4268143EF941009BE9C9 /* delivered.png */; };
+		05EB427E143EF941009BE9C9 /* bubbleblue.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB426A143EF941009BE9C9 /* bubbleblue.png */; };
+		05EB427F143EF941009BE9C9 /* bubblewhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB426B143EF941009BE9C9 /* bubblewhite.png */; };
+		05EB4280143EF941009BE9C9 /* read.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB426C143EF941009BE9C9 /* read.png */; };
+		05EB4281143EF941009BE9C9 /* send-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB426E143EF941009BE9C9 /* send-pressed.png */; };
+		05EB4282143EF941009BE9C9 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB426F143EF941009BE9C9 /* send.png */; };
+		05EB4283143EF941009BE9C9 /* textinput.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4270143EF941009BE9C9 /* textinput.png */; };
+		05EB4284143EF941009BE9C9 /* bottombar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4272143EF941009BE9C9 /* bottombar@2x.png */; };
+		05EB4285143EF941009BE9C9 /* delivered@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4273143EF941009BE9C9 /* delivered@2x.png */; };
+		05EB4286143EF941009BE9C9 /* bubbleblue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4275143EF941009BE9C9 /* bubbleblue@2x.png */; };
+		05EB4287143EF941009BE9C9 /* bubblewhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4276143EF941009BE9C9 /* bubblewhite@2x.png */; };
+		05EB4288143EF941009BE9C9 /* read@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4277143EF941009BE9C9 /* read@2x.png */; };
+		05EB4289143EF941009BE9C9 /* send-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4279143EF941009BE9C9 /* send-pressed@2x.png */; };
+		05EB428A143EF941009BE9C9 /* send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB427A143EF941009BE9C9 /* send@2x.png */; };
+		05EB428B143EF941009BE9C9 /* textinput@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB427B143EF941009BE9C9 /* textinput@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +57,23 @@
 		05EB4258143EC6D6009BE9C9 /* OHAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHAttributedLabel.m; sourceTree = "<group>"; };
 		05EB425C143ECE8A009BE9C9 /* MultiLabelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiLabelController.h; sourceTree = "<group>"; };
 		05EB425D143ECE8A009BE9C9 /* MultiLabelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiLabelController.m; sourceTree = "<group>"; };
-		05EB425F143ECF9C009BE9C9 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
 		05EB4261143ED0DB009BE9C9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		05EB4263143EF62A009BE9C9 /* bubbleblue-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bubbleblue-retina.png"; path = "../../../bubbleblue-retina.png"; sourceTree = "<group>"; };
+		05EB4267143EF941009BE9C9 /* bottombar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottombar.png; sourceTree = "<group>"; };
+		05EB4268143EF941009BE9C9 /* delivered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delivered.png; sourceTree = "<group>"; };
+		05EB426A143EF941009BE9C9 /* bubbleblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleblue.png; sourceTree = "<group>"; };
+		05EB426B143EF941009BE9C9 /* bubblewhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubblewhite.png; sourceTree = "<group>"; };
+		05EB426C143EF941009BE9C9 /* read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = read.png; sourceTree = "<group>"; };
+		05EB426E143EF941009BE9C9 /* send-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-pressed.png"; sourceTree = "<group>"; };
+		05EB426F143EF941009BE9C9 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		05EB4270143EF941009BE9C9 /* textinput.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textinput.png; sourceTree = "<group>"; };
+		05EB4272143EF941009BE9C9 /* bottombar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottombar@2x.png"; sourceTree = "<group>"; };
+		05EB4273143EF941009BE9C9 /* delivered@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delivered@2x.png"; sourceTree = "<group>"; };
+		05EB4275143EF941009BE9C9 /* bubbleblue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleblue@2x.png"; sourceTree = "<group>"; };
+		05EB4276143EF941009BE9C9 /* bubblewhite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubblewhite@2x.png"; sourceTree = "<group>"; };
+		05EB4277143EF941009BE9C9 /* read@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "read@2x.png"; sourceTree = "<group>"; };
+		05EB4279143EF941009BE9C9 /* send-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-pressed@2x.png"; sourceTree = "<group>"; };
+		05EB427A143EF941009BE9C9 /* send@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send@2x.png"; sourceTree = "<group>"; };
+		05EB427B143EF941009BE9C9 /* textinput@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textinput@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +122,6 @@
 		05EB423E143EC17F009BE9C9 /* ChatScreenBubble */ = {
 			isa = PBXGroup;
 			children = (
-				05EB4263143EF62A009BE9C9 /* bubbleblue-retina.png */,
-				05EB425F143ECF9C009BE9C9 /* bubble.png */,
-				05EB425B143EC6DE009BE9C9 /* OHAttributedLabel */,
 				05EB4252143EC19C009BE9C9 /* BubbleMultiLabel.h */,
 				05EB4253143EC19C009BE9C9 /* BubbleMultiLabel.m */,
 				05EB425C143ECE8A009BE9C9 /* MultiLabelController.h */,
@@ -104,6 +129,8 @@
 				05EB4247143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.h */,
 				05EB4248143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m */,
 				05EB424A143EC17F009BE9C9 /* MainWindow.xib */,
+				05EB4265143EF941009BE9C9 /* Chatscreen-resources */,
+				05EB425B143EC6DE009BE9C9 /* OHAttributedLabel */,
 				05EB423F143EC17F009BE9C9 /* Supporting Files */,
 			);
 			path = ChatScreenBubble;
@@ -129,6 +156,78 @@
 				05EB4258143EC6D6009BE9C9 /* OHAttributedLabel.m */,
 			);
 			name = OHAttributedLabel;
+			sourceTree = "<group>";
+		};
+		05EB4265143EF941009BE9C9 /* Chatscreen-resources */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4266143EF941009BE9C9 /* Legacy */,
+				05EB4271143EF941009BE9C9 /* Retina */,
+			);
+			name = "Chatscreen-resources";
+			path = "../../../../Dropbox/Talkto Visual Design (Mobile)/iPhone/Chatscreen-resources";
+			sourceTree = "<group>";
+		};
+		05EB4266143EF941009BE9C9 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4267143EF941009BE9C9 /* bottombar.png */,
+				05EB4268143EF941009BE9C9 /* delivered.png */,
+				05EB4269143EF941009BE9C9 /* Message Bubbles */,
+				05EB426C143EF941009BE9C9 /* read.png */,
+				05EB426D143EF941009BE9C9 /* Sendbutton */,
+				05EB4270143EF941009BE9C9 /* textinput.png */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+		05EB4269143EF941009BE9C9 /* Message Bubbles */ = {
+			isa = PBXGroup;
+			children = (
+				05EB426A143EF941009BE9C9 /* bubbleblue.png */,
+				05EB426B143EF941009BE9C9 /* bubblewhite.png */,
+			);
+			path = "Message Bubbles";
+			sourceTree = "<group>";
+		};
+		05EB426D143EF941009BE9C9 /* Sendbutton */ = {
+			isa = PBXGroup;
+			children = (
+				05EB426E143EF941009BE9C9 /* send-pressed.png */,
+				05EB426F143EF941009BE9C9 /* send.png */,
+			);
+			path = Sendbutton;
+			sourceTree = "<group>";
+		};
+		05EB4271143EF941009BE9C9 /* Retina */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4272143EF941009BE9C9 /* bottombar@2x.png */,
+				05EB4273143EF941009BE9C9 /* delivered@2x.png */,
+				05EB4274143EF941009BE9C9 /* Message Bubbles */,
+				05EB4277143EF941009BE9C9 /* read@2x.png */,
+				05EB4278143EF941009BE9C9 /* Sendbutton */,
+				05EB427B143EF941009BE9C9 /* textinput@2x.png */,
+			);
+			path = Retina;
+			sourceTree = "<group>";
+		};
+		05EB4274143EF941009BE9C9 /* Message Bubbles */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4275143EF941009BE9C9 /* bubbleblue@2x.png */,
+				05EB4276143EF941009BE9C9 /* bubblewhite@2x.png */,
+			);
+			path = "Message Bubbles";
+			sourceTree = "<group>";
+		};
+		05EB4278143EF941009BE9C9 /* Sendbutton */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4279143EF941009BE9C9 /* send-pressed@2x.png */,
+				05EB427A143EF941009BE9C9 /* send@2x.png */,
+			);
+			path = Sendbutton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +279,22 @@
 			files = (
 				05EB4243143EC17F009BE9C9 /* InfoPlist.strings in Resources */,
 				05EB424C143EC17F009BE9C9 /* MainWindow.xib in Resources */,
-				05EB4260143ECF9C009BE9C9 /* bubble.png in Resources */,
-				05EB4264143EF62A009BE9C9 /* bubbleblue-retina.png in Resources */,
+				05EB427C143EF941009BE9C9 /* bottombar.png in Resources */,
+				05EB427D143EF941009BE9C9 /* delivered.png in Resources */,
+				05EB427E143EF941009BE9C9 /* bubbleblue.png in Resources */,
+				05EB427F143EF941009BE9C9 /* bubblewhite.png in Resources */,
+				05EB4280143EF941009BE9C9 /* read.png in Resources */,
+				05EB4281143EF941009BE9C9 /* send-pressed.png in Resources */,
+				05EB4282143EF941009BE9C9 /* send.png in Resources */,
+				05EB4283143EF941009BE9C9 /* textinput.png in Resources */,
+				05EB4284143EF941009BE9C9 /* bottombar@2x.png in Resources */,
+				05EB4285143EF941009BE9C9 /* delivered@2x.png in Resources */,
+				05EB4286143EF941009BE9C9 /* bubbleblue@2x.png in Resources */,
+				05EB4287143EF941009BE9C9 /* bubblewhite@2x.png in Resources */,
+				05EB4288143EF941009BE9C9 /* read@2x.png in Resources */,
+				05EB4289143EF941009BE9C9 /* send-pressed@2x.png in Resources */,
+				05EB428A143EF941009BE9C9 /* send@2x.png in Resources */,
+				05EB428B143EF941009BE9C9 /* textinput@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
