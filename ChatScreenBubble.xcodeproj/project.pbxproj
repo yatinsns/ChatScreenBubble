@@ -14,6 +14,13 @@
 		05EB4245143EC17F009BE9C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB4244143EC17F009BE9C9 /* main.m */; };
 		05EB4249143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB4248143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m */; };
 		05EB424C143EC17F009BE9C9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05EB424A143EC17F009BE9C9 /* MainWindow.xib */; };
+		05EB4254143EC19C009BE9C9 /* BubbleMultiLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB4253143EC19C009BE9C9 /* BubbleMultiLabel.m */; };
+		05EB4259143EC6D6009BE9C9 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB4256143EC6D6009BE9C9 /* NSAttributedString+Attributes.m */; };
+		05EB425A143EC6D6009BE9C9 /* OHAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB4258143EC6D6009BE9C9 /* OHAttributedLabel.m */; };
+		05EB425E143ECE8A009BE9C9 /* MultiLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB425D143ECE8A009BE9C9 /* MultiLabelController.m */; };
+		05EB4260143ECF9C009BE9C9 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB425F143ECF9C009BE9C9 /* bubble.png */; };
+		05EB4262143ED0DB009BE9C9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB4261143ED0DB009BE9C9 /* CoreText.framework */; };
+		05EB4264143EF62A009BE9C9 /* bubbleblue-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4263143EF62A009BE9C9 /* bubbleblue-retina.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +28,24 @@
 		05EB4238143EC17F009BE9C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		05EB423A143EC17F009BE9C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05EB423C143EC17F009BE9C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		05EB4240143EC17F009BE9C9 /* ChatScreenBubble-Info.plist */ = {isa = PBXFileReference; path = "ChatScreenBubble-Info.plist"; sourceTree = "<group>"; };
+		05EB4240143EC17F009BE9C9 /* ChatScreenBubble-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChatScreenBubble-Info.plist"; sourceTree = "<group>"; };
 		05EB4242143EC17F009BE9C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		05EB4244143EC17F009BE9C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		05EB4246143EC17F009BE9C9 /* ChatScreenBubble-Prefix.pch */ = {isa = PBXFileReference; path = "ChatScreenBubble-Prefix.pch"; sourceTree = "<group>"; };
-		05EB4247143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.h */ = {isa = PBXFileReference; path = ChatScreenBubbleAppDelegate.h; sourceTree = "<group>"; };
+		05EB4246143EC17F009BE9C9 /* ChatScreenBubble-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatScreenBubble-Prefix.pch"; sourceTree = "<group>"; };
+		05EB4247143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatScreenBubbleAppDelegate.h; sourceTree = "<group>"; };
 		05EB4248143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatScreenBubbleAppDelegate.m; sourceTree = "<group>"; };
 		05EB424B143EC17F009BE9C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		05EB4252143EC19C009BE9C9 /* BubbleMultiLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleMultiLabel.h; sourceTree = "<group>"; };
+		05EB4253143EC19C009BE9C9 /* BubbleMultiLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleMultiLabel.m; sourceTree = "<group>"; };
+		05EB4255143EC6D6009BE9C9 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
+		05EB4256143EC6D6009BE9C9 /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
+		05EB4257143EC6D6009BE9C9 /* OHAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHAttributedLabel.h; sourceTree = "<group>"; };
+		05EB4258143EC6D6009BE9C9 /* OHAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHAttributedLabel.m; sourceTree = "<group>"; };
+		05EB425C143ECE8A009BE9C9 /* MultiLabelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiLabelController.h; sourceTree = "<group>"; };
+		05EB425D143ECE8A009BE9C9 /* MultiLabelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiLabelController.m; sourceTree = "<group>"; };
+		05EB425F143ECF9C009BE9C9 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		05EB4261143ED0DB009BE9C9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		05EB4263143EF62A009BE9C9 /* bubbleblue-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bubbleblue-retina.png"; path = "../../../bubbleblue-retina.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05EB4262143ED0DB009BE9C9 /* CoreText.framework in Frameworks */,
 				05EB4239143EC17F009BE9C9 /* UIKit.framework in Frameworks */,
 				05EB423B143EC17F009BE9C9 /* Foundation.framework in Frameworks */,
 				05EB423D143EC17F009BE9C9 /* CoreGraphics.framework in Frameworks */,
@@ -47,6 +66,7 @@
 		05EB4229143EC17E009BE9C9 = {
 			isa = PBXGroup;
 			children = (
+				05EB4261143ED0DB009BE9C9 /* CoreText.framework */,
 				05EB423E143EC17F009BE9C9 /* ChatScreenBubble */,
 				05EB4237143EC17F009BE9C9 /* Frameworks */,
 				05EB4235143EC17F009BE9C9 /* Products */,
@@ -74,6 +94,13 @@
 		05EB423E143EC17F009BE9C9 /* ChatScreenBubble */ = {
 			isa = PBXGroup;
 			children = (
+				05EB4263143EF62A009BE9C9 /* bubbleblue-retina.png */,
+				05EB425F143ECF9C009BE9C9 /* bubble.png */,
+				05EB425B143EC6DE009BE9C9 /* OHAttributedLabel */,
+				05EB4252143EC19C009BE9C9 /* BubbleMultiLabel.h */,
+				05EB4253143EC19C009BE9C9 /* BubbleMultiLabel.m */,
+				05EB425C143ECE8A009BE9C9 /* MultiLabelController.h */,
+				05EB425D143ECE8A009BE9C9 /* MultiLabelController.m */,
 				05EB4247143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.h */,
 				05EB4248143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m */,
 				05EB424A143EC17F009BE9C9 /* MainWindow.xib */,
@@ -91,6 +118,17 @@
 				05EB4246143EC17F009BE9C9 /* ChatScreenBubble-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05EB425B143EC6DE009BE9C9 /* OHAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4255143EC6D6009BE9C9 /* NSAttributedString+Attributes.h */,
+				05EB4256143EC6D6009BE9C9 /* NSAttributedString+Attributes.m */,
+				05EB4257143EC6D6009BE9C9 /* OHAttributedLabel.h */,
+				05EB4258143EC6D6009BE9C9 /* OHAttributedLabel.m */,
+			);
+			name = OHAttributedLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +180,8 @@
 			files = (
 				05EB4243143EC17F009BE9C9 /* InfoPlist.strings in Resources */,
 				05EB424C143EC17F009BE9C9 /* MainWindow.xib in Resources */,
+				05EB4260143ECF9C009BE9C9 /* bubble.png in Resources */,
+				05EB4264143EF62A009BE9C9 /* bubbleblue-retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +194,10 @@
 			files = (
 				05EB4245143EC17F009BE9C9 /* main.m in Sources */,
 				05EB4249143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m in Sources */,
+				05EB4254143EC19C009BE9C9 /* BubbleMultiLabel.m in Sources */,
+				05EB4259143EC6D6009BE9C9 /* NSAttributedString+Attributes.m in Sources */,
+				05EB425A143EC6D6009BE9C9 /* OHAttributedLabel.m in Sources */,
+				05EB425E143ECE8A009BE9C9 /* MultiLabelController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

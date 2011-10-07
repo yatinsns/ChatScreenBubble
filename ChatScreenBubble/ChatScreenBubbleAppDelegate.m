@@ -7,6 +7,7 @@
 //
 
 #import "ChatScreenBubbleAppDelegate.h"
+#import "MultiLabelController.h"
 
 @implementation ChatScreenBubbleAppDelegate
 
@@ -15,6 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    MultiLabelController *viewController = [[MultiLabelController alloc] initWithNibName:nil bundle:nil];
+    self.window.rootViewController = viewController;
+    [viewController release];
     [self.window makeKeyAndVisible];
     return YES;
 }
