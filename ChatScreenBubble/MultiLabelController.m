@@ -10,13 +10,13 @@
 #import "BubbleMultiLabel.h"
 
 #define MIN_WIDTH 100.0
-#define X_PADDING 10.0
-#define MAX_WIDTH (320.0 - (X_PADDING * 2))
+#define X_PADDING 40.0
+#define MAX_WIDTH (350.0 - (X_PADDING * 2))
 
 #define PADDING_TOP 6.0
 #define PADDING_LEFT 27.0
 #define PADDING_BOTTOM 14.0
-#define PADDING_RIGHT 27.0
+#define PADDING_RIGHT 17.0
 #define PADDING_INTER 12.0
 
 #define LEFTCAPWIDTH 32
@@ -50,6 +50,8 @@
 - (void)loadView
 {
   UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0, 20.0, 320.0, 480.0)];
+    [view setBackgroundColor:[UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1]];  
+    
   UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(0.0, 410.0, 320.0, 30.0)];
     
   slider.minimumValue = MIN_WIDTH;
@@ -70,11 +72,12 @@
   bubbleMultiLabel_.font = font;
   bubbleMultiLabel_.texts = texts;
   bubbleMultiLabel_.clipsToBounds = YES;
+  bubbleMultiLabel_.showDeliveryReadStatus = YES;  
   [bubbleMultiLabel_ setPaddingTop:PADDING_TOP left:PADDING_LEFT bottom:PADDING_BOTTOM right:PADDING_RIGHT inter:PADDING_INTER ];
     
   CGSize size = [BubbleMultiLabel sizeForTexts:texts
                                       withFont:font
-                             constrainedToSize:CGSizeMake(labelWidth_, 480.0) paddingTop:PADDING_TOP left:PADDING_LEFT bottom:PADDING_BOTTOM right:PADDING_RIGHT inter:PADDING_INTER];
+                             constrainedToSize:CGSizeMake(labelWidth_, 480.0) paddingTop:PADDING_TOP left:PADDING_LEFT bottom:PADDING_BOTTOM right:PADDING_RIGHT inter:PADDING_INTER showShowDeliveryReadStatus:bubbleMultiLabel_.showDeliveryReadStatus];
     
   //bubbleMultiLabel_.bounds = CGRectMake(0.0, 0.0, size.width, size.height);
   //bubbleMultiLabel_.center = CGPointMake(view.bounds.size.width/2, (view.bounds.origin.y + slider.frame.origin.y)/2);
@@ -121,8 +124,8 @@
   labelWidth_ = slider.value;
   CGSize size = [BubbleMultiLabel sizeForTexts:bubbleMultiLabel_.texts
                                       withFont:bubbleMultiLabel_.font
-                             constrainedToSize:CGSizeMake(labelWidth_, 480.0) paddingTop:PADDING_TOP left:PADDING_LEFT bottom:PADDING_BOTTOM right:PADDING_RIGHT inter:PADDING_INTER];
+                             constrainedToSize:CGSizeMake(labelWidth_, 480.0) paddingTop:PADDING_TOP left:PADDING_LEFT bottom:PADDING_BOTTOM right:PADDING_RIGHT inter:PADDING_INTER showShowDeliveryReadStatus:bubbleMultiLabel_.showDeliveryReadStatus];
   //bubbleMultiLabel_.bounds = CGRectMake(0.0, 0.0, size.width, size.height);
-  bubbleMultiLabel_.frame = CGRectMake(10.0, 30.0, size.width, size.height);
+  bubbleMultiLabel_.frame = CGRectMake(X_PADDING, 30.0, size.width, size.height);
 }
 @end

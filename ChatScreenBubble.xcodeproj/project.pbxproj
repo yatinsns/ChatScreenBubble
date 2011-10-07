@@ -420,6 +420,7 @@
 				05EB4251143EC17F009BE9C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

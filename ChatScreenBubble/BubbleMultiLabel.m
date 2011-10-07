@@ -10,7 +10,12 @@
 #import "OHAttributedLabel.h"
 #import "NSAttributedString+Attributes.h"
 
+#define EXTRA_PADDING_FOR_DELIVERY_READ_STATUS 30
+
+
 @implementation BubbleMultiLabel
+
+@synthesize showDeliveryReadStatus = showDeliveryReadStatus_;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -32,6 +37,8 @@
         [self addSubview:bubbleImageView_];
         
         labels_ = [[NSMutableArray alloc] init];
+        lineViews_ = [[NSMutableArray alloc] init];
+        showDeliveryReadStatus_ = NO;
     }
     return self;
 }
@@ -139,22 +146,43 @@
 
 #pragma mark - Layout management
 
-- (void)layoutSubviews
+
+- (void)removeSubLineViews
 {
+    for(UIView *lineView in lineViews_)
+    {
+        [lineView removeFromSuperview];
+    }    
+    [lineViews_ removeAllObjects];
+    
+}
+
+- (void)layoutSubviews
+{    
     [super layoutSubviews];
+    
+    [self removeSubLineViews];
     bubbleImageView_.frame = self.bounds;
     
     CGFloat x = paddingLeft_;
     CGFloat y = paddingTop_;
     CGFloat labelWidth = self.bounds.size.width - (paddingLeft_ + paddingRight_);
+    if(showDeliveryReadStatus_)
+        labelWidth -= EXTRA_PADDING_FOR_DELIVERY_READ_STATUS;
     
     BOOL first = YES;
     
     for(OHAttributedLabel *label in labels_)
     {
         if(!first)
-        {
-            y+=paddingInter_;
+        {            
+            UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(paddingLeft_, y+paddingInter_/2, labelWidth, 1)];
+            lineView.backgroundColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:0.3];
+            [self addSubview:lineView];
+            [lineViews_ addObject:lineView];
+            [lineView release];
+            
+            y+=paddingInter_;            
         }
         CGFloat remainingHeight = self.bounds.size.height - y - paddingBottom_;
         CGSize labelSize = [label.attributedText sizeConstrainedToSize:CGSizeMake(labelWidth, remainingHeight)];
@@ -167,13 +195,16 @@
 - (void)refreshViewWithCurrentContext
 {
     [self refreshLabels];   
-    CGSize sizeToFit = [[self class] sizeForTexts:texts_ withFont:font_ constrainedToSize:CGSizeMake(self.frame.size.width, CGFLOAT_MAX) paddingTop:paddingTop_ left:paddingLeft_ bottom:paddingBottom_ right:paddingRight_ inter:paddingInter_];
+    CGSize sizeToFit = [[self class] sizeForTexts:texts_ withFont:font_ constrainedToSize:CGSizeMake(self.frame.size.width, CGFLOAT_MAX) paddingTop:paddingTop_ left:paddingLeft_ bottom:paddingBottom_ right:paddingRight_ inter:paddingInter_ showShowDeliveryReadStatus:showDeliveryReadStatus_];
     self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, sizeToFit.width, sizeToFit.height);
 }
 
-+ (CGSize)sizeForTexts:(NSArray *)texts withFont:(UIFont *)font constrainedToSize:(CGSize)size paddingTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right inter:(CGFloat)inter
++ (CGSize)sizeForTexts:(NSArray *)texts withFont:(UIFont *)font constrainedToSize:(CGSize)size paddingTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right inter:(CGFloat)inter showShowDeliveryReadStatus:(BOOL)showDeliveryReadStatus
 {
     CGFloat labelWidth = size.width - (left + right);
+    if(showDeliveryReadStatus)
+        labelWidth -= EXTRA_PADDING_FOR_DELIVERY_READ_STATUS;
+    
     CGFloat labelHeightSum = 0;
     
     for(NSString *text in texts)

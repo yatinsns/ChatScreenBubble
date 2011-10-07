@@ -11,6 +11,7 @@
 @interface BubbleMultiLabel : UIView {
     UIImageView *bubbleImageView_;
     NSMutableArray *labels_;
+    NSMutableArray *lineViews_;
     NSMutableArray *texts_;
     UIFont *font_;
     CGFloat paddingLeft_;
@@ -18,15 +19,17 @@
     CGFloat paddingTop_;
     CGFloat paddingBottom_;
     CGFloat paddingInter_;
+    BOOL showDeliveryReadStatus_;
 }
 
 @property (nonatomic, retain) NSMutableArray *texts;
 @property (nonatomic, retain) UIFont *font;
+@property (nonatomic, assign) BOOL showDeliveryReadStatus;
 
 - (id)initWithImageName:(NSString *)imageName leftCapWidth:(NSInteger)leftCapWidth topCapHeight:(NSInteger)topCapHeight;
 - (void)setPaddingTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right inter:(CGFloat)inter;
 - (void)refreshViewWithCurrentContext;
 
-+ (CGSize)sizeForTexts:(NSArray *)texts withFont:(UIFont *)font constrainedToSize:(CGSize)size paddingTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right inter:(CGFloat)inter;
++ (CGSize)sizeForTexts:(NSArray *)texts withFont:(UIFont *)font constrainedToSize:(CGSize)size paddingTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right inter:(CGFloat)inter showShowDeliveryReadStatus:(BOOL)showDeliveryReadStatus;
 
 @end
