@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05EB4239143EC17F009BE9C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB4238143EC17F009BE9C9 /* UIKit.framework */; };
+		05EB423B143EC17F009BE9C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB423A143EC17F009BE9C9 /* Foundation.framework */; };
+		05EB423D143EC17F009BE9C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB423C143EC17F009BE9C9 /* CoreGraphics.framework */; };
+		05EB4243143EC17F009BE9C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05EB4241143EC17F009BE9C9 /* InfoPlist.strings */; };
+		05EB4245143EC17F009BE9C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB4244143EC17F009BE9C9 /* main.m */; };
+		05EB4249143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB4248143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m */; };
+		05EB424C143EC17F009BE9C9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05EB424A143EC17F009BE9C9 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05EB4234143EC17F009BE9C9 /* ChatScreenBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatScreenBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05EB4238143EC17F009BE9C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		05EB423A143EC17F009BE9C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		05EB423C143EC17F009BE9C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		05EB4240143EC17F009BE9C9 /* ChatScreenBubble-Info.plist */ = {isa = PBXFileReference; path = "ChatScreenBubble-Info.plist"; sourceTree = "<group>"; };
+		05EB4242143EC17F009BE9C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05EB4244143EC17F009BE9C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05EB4246143EC17F009BE9C9 /* ChatScreenBubble-Prefix.pch */ = {isa = PBXFileReference; path = "ChatScreenBubble-Prefix.pch"; sourceTree = "<group>"; };
+		05EB4247143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.h */ = {isa = PBXFileReference; path = ChatScreenBubbleAppDelegate.h; sourceTree = "<group>"; };
+		05EB4248143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatScreenBubbleAppDelegate.m; sourceTree = "<group>"; };
+		05EB424B143EC17F009BE9C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05EB4231143EC17F009BE9C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB4239143EC17F009BE9C9 /* UIKit.framework in Frameworks */,
+				05EB423B143EC17F009BE9C9 /* Foundation.framework in Frameworks */,
+				05EB423D143EC17F009BE9C9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05EB4229143EC17E009BE9C9 = {
+			isa = PBXGroup;
+			children = (
+				05EB423E143EC17F009BE9C9 /* ChatScreenBubble */,
+				05EB4237143EC17F009BE9C9 /* Frameworks */,
+				05EB4235143EC17F009BE9C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05EB4235143EC17F009BE9C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4234143EC17F009BE9C9 /* ChatScreenBubble.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05EB4237143EC17F009BE9C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4238143EC17F009BE9C9 /* UIKit.framework */,
+				05EB423A143EC17F009BE9C9 /* Foundation.framework */,
+				05EB423C143EC17F009BE9C9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05EB423E143EC17F009BE9C9 /* ChatScreenBubble */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4247143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.h */,
+				05EB4248143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m */,
+				05EB424A143EC17F009BE9C9 /* MainWindow.xib */,
+				05EB423F143EC17F009BE9C9 /* Supporting Files */,
+			);
+			path = ChatScreenBubble;
+			sourceTree = "<group>";
+		};
+		05EB423F143EC17F009BE9C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05EB4240143EC17F009BE9C9 /* ChatScreenBubble-Info.plist */,
+				05EB4241143EC17F009BE9C9 /* InfoPlist.strings */,
+				05EB4244143EC17F009BE9C9 /* main.m */,
+				05EB4246143EC17F009BE9C9 /* ChatScreenBubble-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05EB4233143EC17F009BE9C9 /* ChatScreenBubble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05EB424F143EC17F009BE9C9 /* Build configuration list for PBXNativeTarget "ChatScreenBubble" */;
+			buildPhases = (
+				05EB4230143EC17F009BE9C9 /* Sources */,
+				05EB4231143EC17F009BE9C9 /* Frameworks */,
+				05EB4232143EC17F009BE9C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatScreenBubble;
+			productName = ChatScreenBubble;
+			productReference = 05EB4234143EC17F009BE9C9 /* ChatScreenBubble.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05EB422B143EC17E009BE9C9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 05EB422E143EC17E009BE9C9 /* Build configuration list for PBXProject "ChatScreenBubble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 05EB4229143EC17E009BE9C9;
+			productRefGroup = 05EB4235143EC17F009BE9C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05EB4233143EC17F009BE9C9 /* ChatScreenBubble */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05EB4232143EC17F009BE9C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB4243143EC17F009BE9C9 /* InfoPlist.strings in Resources */,
+				05EB424C143EC17F009BE9C9 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05EB4230143EC17F009BE9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB4245143EC17F009BE9C9 /* main.m in Sources */,
+				05EB4249143EC17F009BE9C9 /* ChatScreenBubbleAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		05EB4241143EC17F009BE9C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05EB4242143EC17F009BE9C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		05EB424A143EC17F009BE9C9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05EB424B143EC17F009BE9C9 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05EB424D143EC17F009BE9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		05EB424E143EC17F009BE9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05EB4250143EC17F009BE9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatScreenBubble/ChatScreenBubble-Prefix.pch";
+				INFOPLIST_FILE = "ChatScreenBubble/ChatScreenBubble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		05EB4251143EC17F009BE9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatScreenBubble/ChatScreenBubble-Prefix.pch";
+				INFOPLIST_FILE = "ChatScreenBubble/ChatScreenBubble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05EB422E143EC17E009BE9C9 /* Build configuration list for PBXProject "ChatScreenBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EB424D143EC17F009BE9C9 /* Debug */,
+				05EB424E143EC17F009BE9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05EB424F143EC17F009BE9C9 /* Build configuration list for PBXNativeTarget "ChatScreenBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EB4250143EC17F009BE9C9 /* Debug */,
+				05EB4251143EC17F009BE9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05EB422B143EC17E009BE9C9 /* Project object */;
+}
