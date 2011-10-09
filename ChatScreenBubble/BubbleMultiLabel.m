@@ -10,7 +10,8 @@
 #import "OHAttributedLabel.h"
 #import "NSAttributedString+Attributes.h"
 
-#define EXTRA_PADDING_FOR_DELIVERY_READ_STATUS 30
+#define EXTRA_PADDING_FOR_DELIVERY_READ_STATUS 20
+#define RIGHT_MARGIN_FOR_SHOW_STATUS 18
 
 
 @implementation BubbleMultiLabel
@@ -26,7 +27,7 @@
     return self;
 }
 
-- (id)initWithImageName:(NSString *)imageName leftCapWidth:(NSInteger)leftCapWidth topCapHeight:(NSInteger)topCapHeight
+- (id)initWithImageName:(NSString *)imageName leftCapWidth:(NSInteger)leftCapWidth topCapHeight:(NSInteger)topCapHeight readImageName:(NSString *)readImageName deliveryImageName:(NSString *)deliveryImageName
 {
     self = [super initWithFrame:CGRectZero];
     if(self) {
@@ -38,15 +39,22 @@
         
         labels_ = [[NSMutableArray alloc] init];
         lineViews_ = [[NSMutableArray alloc] init];
+        status_ = [[NSMutableArray alloc] init];
         showDeliveryReadStatus_ = NO;
+        
+        readImageName_ = [readImageName copy];
+        deliveryImageName_ = [deliveryImageName copy];
     }
     return self;
 }
 
 - (void)dealloc
 {
-    self.texts = nil;
-    self.font = nil;
+    [readImageName_ dealloc];
+    [deliveryImageName_ dealloc];
+    [lineViews_ dealloc];
+    [texts_ dealloc];
+    [font_ dealloc];
     [labels_ release];
     [bubbleImageView_ release];
     [super dealloc];
@@ -157,11 +165,23 @@
     
 }
 
+- (void)removeSubStatuses
+{
+    for(UIImageView *showStatus in status_)
+    {
+        [showStatus removeFromSuperview];
+    }    
+    [status_ removeAllObjects];
+    
+}
+
 - (void)layoutSubviews
 {    
     [super layoutSubviews];
     
     [self removeSubLineViews];
+    [self removeSubStatuses];
+    
     bubbleImageView_.frame = self.bounds;
     
     CGFloat x = paddingLeft_;
@@ -176,7 +196,7 @@
     {
         if(!first)
         {            
-            UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(paddingLeft_, y+paddingInter_/2, labelWidth, 1)];
+            UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(paddingLeft_, y+paddingInter_/2, self.bounds.size.width - RIGHT_MARGIN_FOR_SHOW_STATUS-paddingLeft_, 1)];
             lineView.backgroundColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:0.3];
             [self addSubview:lineView];
             [lineViews_ addObject:lineView];
@@ -187,6 +207,15 @@
         CGFloat remainingHeight = self.bounds.size.height - y - paddingBottom_;
         CGSize labelSize = [label.attributedText sizeConstrainedToSize:CGSizeMake(labelWidth, remainingHeight)];
         label.frame  = CGRectMake(x, y, labelSize.width, labelSize.height);
+        
+        UIImage *image = [UIImage imageNamed:deliveryImageName_];
+        UIImageView *statusImageView = [[UIImageView alloc] initWithImage:image];
+        CGFloat xForShowStatusImage = self.bounds.size.width - RIGHT_MARGIN_FOR_SHOW_STATUS - 12;
+        statusImageView.frame = CGRectMake(xForShowStatusImage, y+(font_.xHeight/2), 12, 13);
+        [self addSubview:statusImageView];
+        [status_ addObject:statusImageView];
+        [statusImageView release];
+        
         y += labelSize.height;
         first = NO;
     }

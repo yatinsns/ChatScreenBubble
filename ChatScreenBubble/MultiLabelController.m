@@ -9,7 +9,7 @@
 #import "MultiLabelController.h"
 #import "BubbleMultiLabel.h"
 
-#define MIN_WIDTH 100.0
+#define MIN_WIDTH 200.0
 #define X_PADDING 40.0
 #define MAX_WIDTH (350.0 - (X_PADDING * 2))
 
@@ -68,7 +68,7 @@
                     nil];
     
   UIFont *font = [UIFont systemFontOfSize:16.0];
-  bubbleMultiLabel_ = [[BubbleMultiLabel alloc] initWithImageName:@"bubbleblue.png" leftCapWidth:LEFTCAPWIDTH topCapHeight:TOPCAPHEIGHT];
+  bubbleMultiLabel_ = [[BubbleMultiLabel alloc] initWithImageName:@"bubbleblue.png" leftCapWidth:LEFTCAPWIDTH topCapHeight:TOPCAPHEIGHT readImageName:@"read.png" deliveryImageName:@"delivered.png"];
   bubbleMultiLabel_.font = font;
   bubbleMultiLabel_.texts = texts;
   bubbleMultiLabel_.clipsToBounds = YES;
